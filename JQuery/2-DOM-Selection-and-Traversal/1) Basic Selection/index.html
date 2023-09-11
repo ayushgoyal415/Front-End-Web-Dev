@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basic Selection</title>
+  </head>
+  <body>
+    <!-- Multi-selection -->
+    <div class="multi-selection">
+      <h3>'p, button'</h3>
+      <p>This is a paragraph</p>
+      <button>Click</button>
+      <input type="text" placeholder="input" />
+    </div>
+
+    <!-- Grand Selection -->
+    <div class="container">
+      <h3>'div div'</h3>
+      <!--prettier-ignore-->
+      <div class="grand-selection"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!-- Child Selection -->
+    <div class="container">
+      <h3>'div>div'</h3>
+      <!--prettier-ignore-->
+      <div class="child-selection"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- Next Adjacent Selector -->
+    <div class="input-container next-adjacent-selection">
+      <h3>label+input</h3>
+      <label for="input1">Label 1</label>
+      <input type="text" placeholder="input1" id="input1" />
+      <label for="input2">Label 2</label>
+      <input type="text" placeholder="input2" id="input2" />
+      <input type="text" placeholder="input3" id="input3" />
+    </div>
+
+    <!-- Next Siblings Selector -->
+    <div class="input-container next-siblings-selection">
+      <h3>label~input</h3>
+      <label for="input1">Label 1</label>
+      <input type="text" placeholder="input1" id="input1" />
+      <label for="input2">Label 2</label>
+      <input type="text" placeholder="input2" id="input2" />
+      <input type="text" placeholder="input3" id="input3" />
+    </div>
+  </body>
+
+  <script src="../../jquery-3.6.3.js"></script>
+  <script src="index.js"></script>
+</html>

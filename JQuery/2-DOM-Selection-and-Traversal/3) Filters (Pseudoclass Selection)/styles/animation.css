@@ -1,0 +1,50 @@
+.animate-selector {
+  display: inline-flex;
+  flex-direction: column;
+  height: 247px;
+  width: 170px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  background-color: lightgray;
+  margin: 20px;
+  margin-top: 2px;
+  float: left;
+}
+.animate-selector h3 {
+  font-family: Arial;
+  font-style: italic;
+  margin: 0px;
+}
+.animate-selector div {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 1;
+}
+.animate-selector div div {
+  background-color: rgb(255, 166, 0);
+}
+.animate-selector .alter-color {
+  background-color: rgb(79, 9, 9);
+}
+.animate-selector .move {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.animate-selector button {
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  background-color: black;
+  border-radius: 4px;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.animate-selector button:hover {
+  opacity: 0.8;
+}
+.animate-selector button:active {
+  opacity: 1;
+  box-shadow: none;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: inline-block;
+  margin: 10px 20px;
+}
+.level1 {
+  display: inline-grid;
+  gap: 10px;
+  padding: 10px 10px;
+  grid-template: 50px 50px 50px/50px 50px 50px;
+  margin-top: 15px;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+.level2 {
+  display: inline-grid;
+  gap: 5px;
+  grid-template: 12px 12px 12px/12px 12px 12px;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.level3 {
+  background-color: rgb(56, 56, 56);
+  cursor: pointer;
+}
+.level2:hover {
+  background-color: rgba(211, 120, 16, 0.84);
+}
+.level3:hover {
+  background-color: rgb(23, 255, 6);
+}

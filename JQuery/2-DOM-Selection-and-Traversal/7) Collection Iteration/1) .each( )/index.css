@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  margin: auto;
+  background-color: lightgray;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+}
+.container div {
+  display: flex;
+  flex: 1;
+}
+.container div div {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+button {
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  background-color: black;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+button:hover,
+.container div div:hover {
+  opacity: 0.8;
+}
+button:active,
+.container div div:active {
+  opacity: 1;
+  box-shadow: none;
+}

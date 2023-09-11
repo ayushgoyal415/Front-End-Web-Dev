@@ -1,0 +1,50 @@
+* {
+  font-family: Roboto;
+}
+h1 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.content {
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+.content:nth-child(2) {
+  margin-top: 0;
+}
+
+#yt {
+  width: 275px;
+}
+
+#p1 {
+  background-color: rgb(226, 76, 76);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#stock {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+#curr {
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+}
+#today {
+  color: rgb(24, 128, 56);
+  font-size: 16px;
+  margin: 0;
+}
+#after {
+  color: rgb(100, 100, 100);
+  margin-top: 8px;;
+  font-size: 16px;
+}
+#dec{
+  color: red;
+}
+
+

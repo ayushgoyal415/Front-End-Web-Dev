@@ -1,0 +1,25 @@
+main{
+  padding: 57px 27px;
+  color: white;
+  background-image: url(../images/React-icon.svg.png);
+  background-repeat: no-repeat;
+  background-position: 125% 50%;
+  background-size: 500px;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: 600;
+  margin-bottom: 46px;
+  line-height: 47px;
+}
+
+main > ul > li {
+  padding-block: 10px;
+}
+
+main > ul > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}

@@ -1,0 +1,59 @@
+body {
+  font-family: Calibri;
+  margin: 0;
+}
+
+#main-header {
+  background-color: rgb(41, 169, 88);
+  display: flex;
+  padding-left: 30px;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#main {
+  border: 1px solid rgb(184, 182, 182);
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  width: 500px;
+}
+
+#main > .title {
+  margin-bottom: 4px;
+}
+.form-inline{
+  display: flex;
+  align-items: center;
+}
+.form-control{
+  height: 24px;
+  border: 1px solid rgb(184, 182, 182);
+  width: 150px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.btn{
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  padding: 5px 13px 5px 13px;
+  font-size: 14px;
+}
+
+#items{
+  padding-left: 0px;
+}
+
+#items > li{
+  list-style: none;
+  margin-left: 0px;
+  border: 1px solid rgb(184, 182, 182);
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: -1px;
+}

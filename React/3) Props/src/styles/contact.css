@@ -1,0 +1,51 @@
+.contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.status{
+  position: absolute;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  border-radius: 4px;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.Online {
+  background-color: rgb(10, 174, 10);
+}
+
+.contact img {
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+.info-group img {
+  height: 16px;
+  width: 16px;
+}
+.info-group p {
+  display: inline;
+  margin: 0;
+  margin-left: 10px;
+}

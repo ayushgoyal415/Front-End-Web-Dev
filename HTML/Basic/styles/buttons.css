@@ -1,0 +1,323 @@
+button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Youtube 'SUBSCRIBE' Button*/
+.subscribe-button {
+  background-color: rgb(200, 0, 0); /*background color*/
+  color: white; /*text color*/
+  border: none; /* remove border line */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 2px; /* Make rounded corners */
+  cursor: pointer; /* Change cursor to hand */
+  margin-right: 8px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+.subscribe-button:hover {
+  opacity: 0.8;
+}
+.subscribe-button:active {
+  opacity: 0.5;
+}
+
+/* Twitter 'JOIN' Button */
+.join-button {
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.15s, color 0.15s;
+  vertical-align: top;
+  display: inline-block;
+}
+.join-button:hover {
+  background-color: rgb(41, 118, 211);
+  color: white;
+}
+.join-button:active {
+  opacity: 0.7;
+}
+
+/* Twitter 'Tweet' Button */
+.tweet-button {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.15s, opacity 0.15s;
+  vertical-align: top;
+  margin-right: 8px;
+  display: inline-block;
+}
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.tweet-button:active {
+  opacity: 0.8;
+}
+
+/* Uber 'Request now' Button */
+.uber-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+  transition: opacity 0.15s;
+}
+.uber-button:hover {
+  opacity: 0.8;
+}
+
+/* Amazon  'Add to Cart' Button */
+.amazon-button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: black;
+  background-color: rgb(255, 216, 20);
+  font-size: 14px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+}
+.amazon-button:hover {
+  background-color: rgb(245, 205, 3);
+}
+
+/* Amazon 'Buy now' Button */
+.buy-button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: black;
+  background-color: rgb(255, 164, 28);
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+}
+.buy-button:hover {
+  background-color: rgb(245, 154, 10);
+}
+
+/* GitHub 'Sign up' Button */
+.github-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
+  color: white;
+  background-color: rgb(46, 164, 79);
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: top;
+  font-weight: bold;
+  transition: box-shadow 0.15s;
+}
+.github-button:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Bootstrap 'Get started' Button */
+.get-started-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  background-color: rgb(121, 82, 179);
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: top;
+  transition: background-color 0.15s;
+  font-weight: bold;
+  display: inline-block;
+}
+.get-started-button:hover {
+  background-color: rgb(99, 60, 156);
+}
+
+/* Bootstrap 'Download' Button */
+.download-button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+  padding-right: 17px;
+  color: rgb(108, 117, 125);
+  background-color: white;
+  font-size: 14px;
+  margin-right: 6px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 117, 125);
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: top;
+  transition: background-color 0.15s color 0.15s;
+  font-weight: bold;
+  display: inline-block;
+}
+.download-button:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+
+/* LinkedIn 'Apply on company website' Button */
+.apply-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: white;
+  background-color: rgb(10, 102, 194);
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  vertical-align: top;
+  font-weight: bold;
+  transition: background-color 0.15s;
+  display: inline-block;
+}
+.apply-button:hover {
+  background-color: rgb(2, 70, 138);
+}
+
+/* LinkedIn 'Save' Button */
+.save-button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: rgb(10, 102, 194);
+  background-color: white;
+  font-size: 14px;
+  margin-right: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(10, 102, 194);
+  border-radius: 30px;
+  cursor: pointer;
+  vertical-align: top;
+  font-weight: bold;
+  transition: background-color 0.15s, border-width 0.15s;
+  display: inline-block;
+}
+.save-button:hover {
+  background-color: rgb(226, 240, 254);
+  border-width: 2px;
+}
+
+/* Stretch Button(using padding) */
+.stretch-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: padding-top 1s, padding-bottom 1s, padding-left 1s,
+    padding-right 1s;
+}
+.stretch-button:hover {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+/* Click Button (making a 3d click button using margin and shadow) */
+.click-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.click-button:active {
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: none;
+}
+
+/* Stretch buttons -> One Two and Three (making a series of stretching buttons using margin and stretch) */
+.margin-stretch-button {
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  transition: padding 0.15s, margin 0.15s;
+}
+.margin-stretch-button:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

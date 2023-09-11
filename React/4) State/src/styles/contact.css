@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 300px;
+  height: 420px;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+  color: black;
+}
+.fav {
+  background-color: rgb(244, 162, 69);
+}
+.contact-icon {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  object-fit: cover;
+  align-self: center;
+  margin: 20px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.name h3 {
+  display: inline;
+  margin: 0;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.star-icon {
+  width: 25px;
+  cursor: pointer;
+}
+.contact p {
+  margin: 0;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,21 @@
+.set-css{
+  background-color: black;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.set-css>div>div{
+  position: relative;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.set-css>div>div:hover{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

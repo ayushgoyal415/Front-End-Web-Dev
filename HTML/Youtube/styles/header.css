@@ -1,0 +1,134 @@
+#header-root {
+  z-index: 200;
+  position: fixed;
+  inset: 0 0 auto 0;
+  display: flex;
+  height: 55px;
+  background-color: white;
+  border-bottom: 1px solid rgb(228 228 228);
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Icon Container */
+.icon-container {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  font-size: 12px;
+  bottom: -50px;
+  background-color: grey;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+.icon-container:hover .tooltip {
+  opacity: 0.95;
+}
+
+.icon-container img {
+  height: 24px;
+}
+
+/* Left Section */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.menu-icon-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-left: 21px;
+  margin-right: 20px;
+}
+.menu-icon-container:hover {
+  background-color: rgb(228 228 228);
+}
+.left-section > img {
+  height: 20px;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  gap: 25px;
+}
+
+.profile-img {
+  width: 32px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+.profile-img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.notification-badge {
+  position: absolute;
+  font-size: 11px;
+  background-color: rgb(200 0 0);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 10px;
+  inset: 2px -3px auto auto;
+}
+
+/* Middle Section */
+
+.middle-section {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 35px;
+  flex: 1;
+}
+
+.middle-section input {
+  font-size: 16px;
+  padding-left: 10px;
+  height: 41px;
+  border: 1px solid rgb(190 190 190);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+  flex: 1;
+  outline: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.middle-section input::placeholder {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.search-container {
+  border: 1px solid rgb(190 190 190);
+  height: 39px;
+  width: 64px;
+  background-color: rgb(240 240 240);
+  margin-right: 10px;
+  margin-left: -1px;
+}
+
+.voice-search-container {
+  background-color: rgb(245 245 245);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.voice-search-container:hover{
+  background-color: rgb(228 228 228)  );
+}

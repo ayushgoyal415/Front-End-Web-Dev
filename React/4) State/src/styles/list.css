@@ -1,0 +1,20 @@
+.list{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 490px;
+}
+.list div{
+  padding: 20px;
+  background-color: rgba(0, 255, 0, 0.341);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.list p {
+  margin: 0;
+  margin-bottom: 7px;
+}
+.list button {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}

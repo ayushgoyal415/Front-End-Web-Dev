@@ -1,0 +1,57 @@
+body{
+  padding-bottom: 100px;
+}
+h3{
+  font-family: Arial;
+  font-style: italic;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+h3.arg{
+  color: rgb(125, 125, 125);
+}
+.title {
+  font-family: Arial;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.title:hover {
+  opacity: 0.8;
+}
+.container {
+  display: inline-block;
+  margin: 10px 20px;
+  width: 250px;
+}
+.container > div {
+  display: inline-grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+  margin-top: 15px;
+  padding: 10px 10px;
+  background-color: black;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+.container > div > div {
+  display: inline-grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: 12px 12px 12px;
+  grid-template-rows: 12px 12px 12px;
+  justify-content: center;
+  align-content: center;
+}
+.container > div > div > div {
+  background-color: rgb(56, 56, 56);
+  cursor: pointer;
+}
+.container > div > div:hover {
+  background-color: rgba(211, 120, 16, 0.84);
+}
+.container > div > div > div:hover {
+  background-color: rgb(23, 255, 6);
+}

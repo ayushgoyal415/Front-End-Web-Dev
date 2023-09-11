@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>jQuery</title>
+  </head>
+
+  <body>
+    <button id="button1" class="odd counter">Count : 0</button>
+    <button id="button2" class="even counter">Count : 0</button>
+    <button id="button3" class="odd counter">Count : 0</button>
+
+    <input type="password" id="bar" />
+
+    <!-- Animating Box -->
+    <div class="container" id="animation-container">
+      <div class="box" , id="animation-box"><p>Animation Box</p></div>
+
+      <div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+      </div>
+
+      <div>
+        <button id="fade_out">Fade Out</button>
+        <button id="fade_in">Fade In</button>
+      </div>
+
+      <div>
+        <button id="fade_to_0.5">Fade to 0.5</button>
+        <button id="fade_to_1.0">Fade to 1.0</button>
+      </div>
+
+      <div>
+        <button id="slide_up">Slide Up</button>
+        <button id="slide_down">Slide Down</button>
+      </div>
+
+      <button id="toggle">Toggle</button>
+
+      <button id="fade_toggle">Fade Toggle</button>
+
+      <button id="slide_toggle">Slide Toggle</button>
+
+      <button id="animate">Animate</button>
+      
+      <div>
+        <button id="stop_current">Stop Current</button>
+        <button id="stop_queue">Stop Queue</button>
+      </div>
+
+      <button id="keep_animating">Keep Animating</button>
+
+      <button id="toggle_effects">Toggle Effects</button>
+    </div>
+
+    <!-- DOM Manipulation Box -->
+    <div class="container" id="manipulation-container">
+      <div class="box" , id="manipulation-box">
+        <p id="manipulation-text">Manipulation Box</p>
+        <input id="manipulation-bar" type="text" />
+      </div>
+
+      <button id="text"><span>text: </span>Gets/updates text content</button>
+
+      <button id="value"><span>val: </span>Sets "value" attribute</button>
+
+      <button id="html"><span>html: </span>Gets/updates innerHTML</button>
+
+      <button id="addClass"><span>addClass: </span>Adds a new class</button>
+
+      <button id="removeClass">
+        <span>removeClass: </span>Removes a class
+      </button>
+
+      <button id="toggleClass">
+        <span>toggleClass: </span>Toggles a class
+      </button>
+
+      <button id="css"><span>css: </span>Gets or updates the CSS value</button>
+
+      <button id="remove"><span>remove: </span>Removes the element</button>
+
+      <button id="empty"><span>empty: </span>Removes all child nodes</button>
+    </div>
+
+    <!--  AJAX buttons -->
+    <button id="ajax-get">GET</button>
+  </body>
+
+  <!-- Importing jQuery framework -->
+  <script src="../jquery-3.6.3.js"></script>
+
+  <!-- Importing my jQuery modules -->
+  <script src="JS/1-selecting-elements.js"></script>
+  <script src="JS/2-multiple-event-listeners.js"></script>
+  <script src="JS/3-animate.js"></script>
+  <script src="JS/4-DOM-manipulation.js"></script>
+  <script src="JS/5-GET-AJAX.js"></script>
+</html>

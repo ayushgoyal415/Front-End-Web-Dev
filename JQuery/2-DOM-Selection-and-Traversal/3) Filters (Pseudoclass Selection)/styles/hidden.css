@@ -1,0 +1,28 @@
+.hidden {
+  display: inline-flex;
+  flex-direction: column;
+  float: left;
+  margin: 20px;
+  margin-top: 10px;
+}
+.hidden>div{
+  margin: 0;
+  margin-bottom: 10px;
+}
+.hidden button {
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  background-color: black;
+  border-radius: 4px;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.hidden button:hover {
+  opacity: 0.8;
+}
+.hidden button:active {
+  opacity: 1;
+  box-shadow: none;
+}

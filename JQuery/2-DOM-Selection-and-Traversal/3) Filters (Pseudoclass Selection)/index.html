@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/container.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/focus.css" />
+    <link rel="stylesheet" href="styles/hidden.css" />
+    <title>Content Filters</title>
+  </head>
+  <body>
+    <!--* Content Filters--------------------------------------------------------------- -->
+    <p class="title">Content Filters</p>
+
+    <!--. Contains Selector -->
+    <div class="container" style="float: left">
+      <h3>.filter</h3>
+      <h3>(':contains("Hello")')</h3>
+      <p class="contains-selector">
+        <span>Hello</span> <span>this</span> <span>is</span> <span>Ayush</span>.
+        <span>Hello</span> <span>this</span> <span>is</span> <span>Abeesh</span>
+      </p>
+    </div>
+
+    <!--. Empty Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':empty')</h3>
+      <!-- prettier-ignore -->
+      <div class="empty-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div></div> <!-- Last div is left empty -->
+      </div>
+    </div>
+
+    <!--. Parent Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':parent')</h3>
+      <!-- prettier-ignore -->
+      <div class="parent-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div></div> <!-- Last div is left empty -->
+      </div>
+    </div>
+
+    <!--. Has Selector -->
+    <div class="container">
+      <h3>.has('div')</h3>
+      <!-- prettier-ignore -->
+      <div class="has-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div></div> <!-- Last div is left empty -->
+      </div>
+    </div>
+
+    <!--* Child Filters----------------------------------------------------------------- -->
+    <p class="title">Child Filters</p>
+
+    <!--. First Child Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':first-child')</h3>
+      <!--prettier-ignore-->
+      <div class="first-child-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Last Child Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':last-child')</h3>
+      <!--prettier-ignore-->
+      <div class="last-child-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. nth Child Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':nth-child(3)')</h3>
+      <!--prettier-ignore-->
+      <div class="nth-child-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. nth Last Child Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':nth-last-child(3)')</h3>
+      <!--prettier-ignore-->
+      <div class="nth-last-child-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Only Child Selector -->
+    <div class="container">
+      <h3>.filter</h3>
+      <h3>(':only-child')</h3>
+      <!--prettier-ignore-->
+      <div class="only-child-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div><div></div></div> <!-- Last div has only a single child -->
+      </div>
+    </div>
+
+    <!--* Index Filters----------------------------------------------------------------- -->
+    <p class="title">Index Filters</p>
+
+    <!--. First Selector -->
+    <div class="container">
+      <h3>.first()</h3>
+      <!--prettier-ignore-->
+      <div class="first-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Last Selector -->
+    <div class="container">
+      <h3>.last()</h3>
+      <!--prettier-ignore-->
+      <div class="last-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Index Selector -->
+    <div class="container">
+      <h3>.eq(3)</h3>
+      <!--prettier-ignore-->
+      <div class="index-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Negative Index Selector -->
+    <div class="container">
+      <h3>.eq(-3)</h3>
+      <!--prettier-ignore-->
+      <div class="negative-index-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Even Selector -->
+    <div class="container">
+      <h3>.even()</h3>
+      <!--prettier-ignore-->
+      <div class="even-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Odd Selector -->
+    <div class="container">
+      <h3>.odd()</h3>
+      <!--prettier-ignore-->
+      <div class="odd-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Slice Selector -->
+    <div class="container">
+      <h3>.slice(4,6)</h3>
+      <!--prettier-ignore-->
+      <div class="slice-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--* Misc Filters--------------------------------------------------------------- -->
+    <p class="title">Misc Filters</p>
+
+    <!-- . Animation Selector -->
+    <div class="animate-selector">
+      <h3 style="margin-bottom: 5px">.filter</h3>
+      <h3 style="margin-bottom: 20px">(':animated')</h3>
+      <div>
+        <div></div>
+        <div class="move alter-color"></div>
+        <div class="move alter-color"></div>
+        <div></div>
+      </div>
+      <button>Toggle</button>
+    </div>
+
+    <!--. Focus Selector -->
+    <div class="focus">
+      <h3 style="margin-top: 10px; margin-bottom: 5px">.filter</h3>
+      <h3 style="margin-bottom: 20px">(':focus')</h3>
+      <div class="focus-selector">
+        <button>0</button><button>1</button><button>2</button><button>3</button
+        ><button>4</button><button>5</button><button>6</button><button>7</button
+        ><button>8</button>
+      </div>
+    </div>
+
+    <!--. Not Selector -->
+    <div class="container" style="margin-top: 36px">
+      <h3>.not(':parent')</h3>
+      <!--prettier-ignore-->
+      <div class="not-selector">
+        <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <!--. Hidden selector-->
+    <div class="hidden">
+      <div class="container">
+        <h3>.filter</h3>
+        <h3>(':hidden')</h3>
+        <!--prettier-ignore-->
+        <div class="hidden-selector">
+          <div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+          <div>
+            <div></div><div></div><div></div><div></div>
+      
+            <!--. size = 0 -->
+            <div style="width: 0px; height: 0px"></div>
+      
+            <!--. visibility: hidden -->
+            <div style="visibility: hidden;"></div>
+      
+            <!--. opacity 0 -->
+            <div style="opacity: 0;"></div>
+
+            <!--. Animation -->
+            <!--. Considered Hidden only after the animation ends -->
+            <div id="animate"></div>
+      
+            <!--. input type = hidden -->
+            <!--. Considered Hidden -->
+            <form><input type="hidden"></form>
+          </div>
+          <!--. display: none -->
+          <!--. Considered Hidden -->
+          <div style="display: none"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+      </div>
+      <button>Count</button>
+    </div>
+  </body>
+
+  <script src="../../jquery-3.6.3.js"></script>
+
+  <script>
+    // Animating Functions
+    $(function () {
+      (function animate() {
+        $('.move').slideToggle('slow', animate);
+      })();
+      $('#animate').fadeOut(2000);
+    });
+  </script>
+
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 50px 100px;
+  background-color: rgb(20, 19, 19);
+}
+.btn {
+  width: 298px;
+  height: 40px;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.btn:hover {
+  color: yellow;
+  border: 1px solid yellow;
+}
+.btn:active{
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.output-box {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(100, 100, 100);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.output-box:hover {
+  border: 2px solid lightcoral;
+}
+.msg {
+  font-family: Arial;
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}

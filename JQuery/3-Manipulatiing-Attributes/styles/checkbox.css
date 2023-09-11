@@ -1,0 +1,72 @@
+/*
+  .Making the default checkbox hidden
+*/
+input[type='checkbox'] {
+  display: none;
+}
+
+/*
+  .Making Label of the checkbox
+  - The position is set as relative so that the box-div can be positioned inside it
+*/
+.label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*
+  .Constructing the box
+  - It is positioned as absolute inside the label (position relative)
+*/
+.box {
+  position: absolute;
+  inset: 0;
+  height: 15px;
+  width: 15px;
+  opacity: 0.3;
+  background-color: black;
+  border-radius: 3px;
+}
+.label:hover .box,
+.label:not(:has(:checked)):hover .box:after{
+  opacity: 0.5;
+  display: block;
+}
+.label:active .box {
+  opacity: 0.7;
+}
+
+/*
+  . Constructing the tick mark
+  - Initially it's display is set to none as it has to shown only after checkbox is selected
+  - It is positioned absolute inside the label (position relative)
+*/
+.box:after {
+  inset: 1px 0 3px 5px;
+  width: 3px;
+  height: 8px;
+  border: solid rgba(255, 149, 0, 0.856);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/*
+  . Things to do once the input gets checked
+  - Show the tick mark
+  - Make the box fully opaque
+*/
+.label:has(input:checked) .box {
+  opacity: 1;
+}
+.label:has(input:checked) .box:after {
+  display: block;
+}

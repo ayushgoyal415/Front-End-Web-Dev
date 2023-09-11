@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Attribute Selectors</title>
+  </head>
+  <body>
+    <div class="hasAttributeSelector">
+      <p>Has Attribute Selector <br><span>[placeholder]</span></p>
+      <input placeholder="has placeholder" />
+      <input value="has value" />
+    </div>
+
+    <div class="attributeEqualsSelector">
+      <p>Equals Selector <br><span>[placeholder="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="nice man" />
+      <input placeholder="nice man false" />
+    </div>
+
+    <div class="attributeNotEqualsSelector">
+      <p>Not Equals Selector <br><span>[placeholder!="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="nice man" />
+      <input placeholder="nice man false" />
+    </div>
+
+    <div class="attributeContainsSelector">
+      <p>Substring Selector <br><span>[placeholder*="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="spiderman" />
+      <input placeholder="wise man" />
+      <input placeholder="doremon" />
+    </div>
+
+    <div class="attributeContainsWordSelector">
+      <p>Word Selector <br><span>[placeholder~="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="nice man" />
+      <input placeholder="spiderman" />
+    </div>
+
+    <div class="attributeContainsPrefixSelector">
+      <p>Prefix Selector <br><span>[placeholder|="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="man-old" />
+      <input placeholder="manly" />
+    </div>
+
+    <div class="attributeStartsWithSelector">
+      <p>Starts With Selector <br><span>[placeholder^="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="man made" />
+      <input placeholder="manhood" />
+      <input placeholder="human" />
+    </div>
+
+    <div class="attributeEndsWithSelector">
+      <p>Ends With Selector <br><span>[placeholder$="man"]</span></p>
+      <input placeholder="man" />
+      <input placeholder="nice man" />
+      <input placeholder="human" />
+      <input placeholder="manhood" />
+    </div>
+
+    <div class="multipleAttributeSelector">
+      <!--prettier-ignore-->
+      <p>Multiple Attribute Selector <br><span>[placeholder^="man"][type="password"]</span></p>
+      <input placeholder="man" type="password" />
+      <input placeholder="manhood" />
+      <input placeholder="nice man" />
+    </div>
+  </body>
+  <script src="../../jquery-3.6.3.js"></script>
+  <script src="index.js"></script>
+</html>

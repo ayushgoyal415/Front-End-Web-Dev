@@ -1,0 +1,63 @@
+input[type='text'] {
+  background-color: black;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: rgb(229, 229, 229);
+  font-size: 15px;
+  border: none;
+  padding: 10px;
+}
+input[type='text']:hover {
+  opacity: 0.7;
+}
+input[type='text']::placeholder {
+  color: rgb(167, 162, 162);
+  font-size: 15px;
+}
+select {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  height: 132px;
+}
+select option {
+  color: white;
+  padding: 10px;
+  outline: solid 1px rgb(64, 64, 64);
+}
+select option:hover {
+  background-color: rgb(78, 78, 78);
+}
+select option:checked {
+  background-color: rgb(78, 78, 78);
+}
+button {
+  height: 35px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  background-color: black;
+  border-radius: 4px;
+  color: rgba(255, 149, 0, 0.856);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 1;
+  box-shadow: none;
+}
+.input-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 150px;
+  height: 230px;
+  margin: 10px 20px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  background-color: lightgrey;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}

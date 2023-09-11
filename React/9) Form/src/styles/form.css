@@ -1,0 +1,28 @@
+fieldset {
+  margin: 20px 0;
+}
+
+.form-box {
+  width: 440px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: black;
+  color: rgba(255, 149, 0, 0.856);
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.15s color 0.15s;
+}
+.submit-button:hover {
+  background-color: rgba(217, 127, 0, 0.856);
+  color: black;
+}
+.submit-button:active{
+  box-shadow: none;
+  background-color: rgba(223, 130, 0, 0.856);
+}

@@ -1,0 +1,47 @@
+.radio-label input[type='radio'] {
+  display: none;
+}
+
+.radio-label {
+  font-family: Poppins;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-box {
+  position: absolute;
+  inset: 4px 0px 0px 3px;
+  height: 16px;
+  width: 16px;
+  opacity: 0.3;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.radio-box:after {
+  inset: 3px 2px 1px 3px;
+  width: 4px;
+  height: 4px;
+  border: solid rgba(255, 149, 0, 0.856);
+  border-width: 3px;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.radio-label:hover .radio-box,
+.radio-label:not(:has(:checked)):hover .radio-box:after {
+  opacity: 0.5;
+  display: block;
+}
+
+.radio-label:has(input:checked) .radio-box,
+.radio-label:has(input:checked) .radio-box:after {
+  opacity: 1;
+  display: block;
+}
