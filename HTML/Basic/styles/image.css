@@ -3,8 +3,7 @@
   height: 300px;
   object-fit: cover;
   object-position: top;
-  border: 2px;
-  border-style: solid;
+  border: 2px solid black;
 }
 
 .fit {
@@ -12,8 +11,7 @@
   height: 300px;
   object-fit: contain;
   object-position: centre;
-  border: 2px;
-  border-style: solid;
+  border: 2px solid black;
 }
 
 .round {

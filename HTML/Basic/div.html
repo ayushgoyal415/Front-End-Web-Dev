@@ -9,18 +9,12 @@
   </head>
   <body>
     <!-- Aligning google page using div -->
-    <div class="google-div">
-      <div>
-        <img class="google-logo" src="images/googlelogo_color_272x92dp.png" />
-      </div>
-      <div>
-        <input
-          class="google-search"
-          type="search"
-          placeholder="Search Google or type a URL"
-        />
-      </div>
-      <div>
+    <div id="google-div" class="main-div">
+      <img id="google-logo" src="images/googlelogo_color_272x92dp.png" />
+      <input
+        type="search"
+        placeholder="Search Google or type a URL" />
+      <div class="button-div">
         <button class="search-button">Google Search</button>
         <button class="lucky-button">I'm Feeling Lucky</button>
       </div>
@@ -28,17 +22,19 @@
     <br />
 
     <!-- Using inline block on div -->
-    <div class="friends-div">
-      <img class="ayush-img" src="images/2x2.jpg" />
-      <p class="name-text">Ayush</p>
-      <p class="mutual-text">2 mutual friends</p>
-      <button class="add-button">Add Friend</button>
-    </div>
-    <div class="friends-div">
-      <img class="abeesh-img" src="images/abhi.png" />
-      <p class="name-text">Abeesh</p>
-      <p class="mutual-text">2 mutual friends</p>
-      <button class="add-button">Add Friend</button>
+    <div id="fb-div" class="main-div">
+      <div class="friend-div">
+        <img src="images/2x2.jpg" />
+        <p class="name-text">Ayush</p>
+        <p class="mutual-text">2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+      <div class="friend-div">
+        <img src="images/abhi.png" />
+        <p class="name-text">Abeesh</p>
+        <p class="mutual-text">2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
     </div>
   </body>
 </html>

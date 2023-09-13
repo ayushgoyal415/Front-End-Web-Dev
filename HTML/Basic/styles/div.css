@@ -1,93 +1,79 @@
-.friends-div {
-  width: 200px;
-  margin-right: 15px;
-  display: inline-block;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  text-align: left;
+/* Common to both */
+.main-div{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  border-radius: 6px;
+  padding: 30px;
+  gap: 30px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
-.ayush-img,
-.abeesh-img {
+
+/* Google */
+#google-div {
+  flex-direction: column;
+  align-items: center;
+}
+#google-div img {
+  width: 200px;
+}
+#google-div input {
+  font-size: 16px;
+  width: 500px;
+  border: 0.5px solid rgb(230, 225, 225);
+  padding: 12px 15px;
+  border-radius: 30px;
+  outline: none;
+}
+#google-div input:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+#google-div button{
+  background-color: rgb(236, 233, 233);
+  border: none;
+  font-size: 15px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+#google-div .button-div{
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Facebook */
+
+#fb-div {
+  justify-content: center;
+}
+#fb-div .friend-div {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+#fb-div img {
   width: 200px;
   height: 200px;
-  margin-bottom: 12px;
   object-fit: cover;
   object-position: top;
+  margin-bottom: 10px;
 }
 p {
   font-family: Arial;
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 8px;
+  margin: 0px 0px 4px 10px;
 }
 .name-text {
   font-weight: bold;
-  margin-bottom: 4px;
 }
 .mutual-text {
   color: rgb(100, 100, 100);
-  margin-bottom: 12px;
 }
-.add-button {
+#fb-div button {
   color: white;
   background-color: rgb(39, 124, 227);
   border: none;
-  margin-left: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 20px;
   border-radius: 4px;
   font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
 }
 
-/* Google search box */
-
-div {
-  text-align: center;
-}
-.google-div {
-  text-align: center;
-  width: 550px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin: auto;
-  border-radius: 6px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-}
-.google-logo {
-  width: 200px;
-  margin-bottom: 10px;
-}
-.google-search {
-  font-size: 16px;
-  width: 500px;
-  border: 0.5px;
-  border-style: solid;
-  border-color: rgb(230, 225, 225);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  outline: none;
-}
-.google-search:hover {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-}
-.search-button,
-.lucky-button {
-  background-color: rgb(245, 245, 245);
-  border: none;
-  font-size: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.search-button {
-  margin-right: 10px;
-}

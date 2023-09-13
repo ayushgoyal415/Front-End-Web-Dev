@@ -9,52 +9,42 @@
   </head>
   <body>
     <!-- My search bar -->
-    <div class="search-div">
-      <input class="search-bar" type="text" placeholder="Search" />
+    <div class="main-div" id="search-div">
+      <input type="text" placeholder="Search" />
     </div>
 
     <!-- LinkedIn signup -->
-    <div class="linkedin-div">
-      <p class="label">Email</p>
-      <input type="email" class="text-box" />
-      <p class="disclaimer">
-        By clicking Agree and Join, you agree to the Privacy Policy
-      </p>
-      <button class="join-button">Agree & Join</button>
+    <div class="main-div" id="linkedin-div">
+      <label for="email-input">Email</label>
+      <input type="email" id="email-input" />
+      <p>By clicking Agree and Join, you agree to the Privacy Policy</p>
+      <button>Agree & Join</button>
     </div>
 
     <!-- Twitter tweet box -->
-    <div class="twitter-div">
-      <img class="profile-picture" src="images/2x2.jpg" />
-      <input class="tweet-box" type="text" placeholder="What's happening" />
-      <button class="tweet-button">Tweet</button>
+    <div class="main-div" id="twitter-div">
+      <img src="images/2x2.jpg" />
+      <input type="text" placeholder="What's happening" />
+      <button>Tweet</button>
     </div>
 
     <!-- Google Search -->
-    <div class="google-div">
-      <img class="google-logo" src="images/googlelogo_color_272x92dp.png" />
-      <input
-        class="google-search"
-        type="search"
-        placeholder="Search Google or type a URL"
-      />
+    <div id="google-div" class="main-div">
+      <img src="images/googlelogo_color_272x92dp.png" />
+      <input type="search" placeholder="Search Google or type a URL" />
     </div>
 
     <!-- Uber ride request -->
-    <div class="uber-div">
-      <p class="request-title">Request a ride now</p>
-      <input
-        class="pickup-box"
-        type="text"
-        placeholder="Enter pickup location"
-      />
-      <input
-        class="destination-box"
-        type="text"
-        placeholder="Enter destination"
-      />
-      <button class="request-button">Request now</button>
-      <button class="schedule-button">Schedule for later</button>
+    <div id="uber-div" class="main-div">
+      <h1>Request a ride now</h1>
+      <div>
+        <input type="text" placeholder="Enter pickup location" />
+        <input type="text" placeholder="Enter destination" />
+      </div>
+      <div>
+        <button>Request now</button>
+        <button>Schedule for later</button>
+      </div>
     </div>
   </body>
 </html>
