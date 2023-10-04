@@ -1,32 +1,28 @@
-const headerTitle = document.getElementById("header-title");
-const header = document.getElementById("main-header");
+//* CSS Attribute Selectors
 
-/*
-  * Using tag along with type attribute to select element
-  In this webpage we have two input elements -
-   - First is of 'text' type
-   - Second is of 'submit' type -> looks like a button
-  We can select these boxes in the same ways as we can select in CSS
-*/
-
+// Selects all elements that are 'input' and are of type 'text'
 const text = document.querySelector(`input[type="text"]`);
+text.placeholder = 'Start typing...';
+
+// Selects all elements that are 'input' and are of type 'submit'
 const submit = document.querySelector(`input[type="submit"]`);
+submit.value = 'SEND';
 
-text.placeholder = "Start typing...";
-submit.value = "SEND";
 
-/*
-  * Using CSS pseudo-classes
-    - last-child
-    - nth-child()
-    - nth-child(odd)
-*/
+//* CSS pseudo-class Selectors
 
-const lastItem = document.querySelector(`.list-group-item:last-child`);
-lastItem.style.color = "red";
+// Selects all elements that are 'li' and are 'first' child of their parent
+const firstItems = document.querySelectorAll(`li:first-child`);
+firstItems.forEach(item => (item.style.color = 'green'));
 
-const secondItem = document.querySelector(`.list-group-item:nth-child(2)`);
-secondItem.style.color = "blue";
+// Selects all elements that are 'li' and are 'second' child of their parent
+const secondItems = document.querySelectorAll(`li:nth-child(2)`);
+secondItems.forEach(item => (item.style.color = 'orange'));
 
-const oddItems = document.querySelectorAll(`.list-group-item:nth-child(odd)`);
-oddItems.forEach(item => (item.style.backgroundColor = "lightGray"));
+// Selects all elements that are 'li' and are 'last' child of their parent
+const lastItems = document.querySelectorAll(`li:last-child`);
+lastItems.forEach(item => (item.style.color = 'red'));
+
+// Selects all elements that are 'li' and are 'even' child of their parent
+const oddItems = document.querySelectorAll(`li:nth-child(even)`);
+oddItems.forEach(item => (item.style.backgroundColor = 'black'));

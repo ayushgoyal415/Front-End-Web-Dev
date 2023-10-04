@@ -16,5 +16,5 @@ headerTitle.innerHTML = /*HTML*/ `
 
 `;
 
-console.log("\u001b[32m textContent : ", headerTitle.textContent);
-console.log("\u001b[32m innerText : ", headerTitle.innerText);
+console.log('\u001b[32m textContent : ', headerTitle.textContent);
+console.log('\u001b[32m innerText : ', headerTitle.innerText);

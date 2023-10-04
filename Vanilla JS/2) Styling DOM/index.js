@@ -1,20 +1,11 @@
-const headerTitle = document.getElementById("header-title");
-const header = document.getElementById("main-header");
+const header = document.querySelector('header');
+header.style.borderBottom = 'solid 3px #000';
 
-header.style.borderBottom = "solid 3px #000";
-
-// Adding multiple styles to multiple elements at once using for-loop
-const items = document.getElementsByClassName("list-group-item");
-for (let i = 0; i < items.length; i++) {
-  Object.assign(items[i].style, {
-    fontStyle: "italic",
-    backgroundColor: "black",
-    color: "white"
-  });
-}
+// Adding multiple styles to multiple elements at once using forEach
+const items = document.querySelectorAll('li');
+const new_styles = { backgroundColor: 'black', color: 'white' };
+items.forEach(val => Object.assign(val.style, new_styles));
 
 // Adding style by adding a new class
-const titles = document.getElementsByClassName("title");
-for (let i = 0; i < titles.length; i++) {
-  titles[i].classList.add("new");
-}
+const titles = document.querySelectorAll('h2');
+titles.forEach(val => val.classList.add('new'));

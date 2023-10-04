@@ -6,24 +6,21 @@
   inset: 55px auto 0 0;
   padding-top: 5px;
 }
-
-.sidebar-link {
+#sidebar-root .container {
   all: unset;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 72px;
+  gap: 5px;
+  width: 100%; /* Setting width same as width of sidebar */
+  aspect-ratio: 1; /* Setting height same as width */
   font-size: 10px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-
-.sidebar-link img {
+#sidebar-root .container img {
   height: 24px;
-  margin-bottom: 5px;
 }
-
-.sidebar-link:hover {
+#sidebar-root .container:hover {
   background-color: rgb(235 235 235);
 }

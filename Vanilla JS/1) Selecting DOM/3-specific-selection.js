@@ -18,13 +18,13 @@ console.log('\u001b[32m qs -> #items : ', document.querySelector("#items"));
   * Selecting multiple elements by referencing anything using querySelectorAll()
    - can select a class name
    - can select a tag name
-  querySelectorAll() returns a NodeList which can be used as an Array and
+  querySelectorAll() returns a 'NodeList' which can be used as an Array and
   array functions can directly be called upon it
   
   * Selecting multiple elements from a class using getElementsByClassName()
   - can only select a class name
   - no need to put dot operator before class name as it is implied
-  getElementsByClassName() returns an HTMLCollection which cannot be used as
+  getElementsByClassName() returns an 'HTMLCollection' which cannot be used as
   an array directly and thus in order to apply array methods, it has to be
   manually converted to an array
 

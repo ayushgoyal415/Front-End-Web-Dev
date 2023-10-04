@@ -30,6 +30,7 @@ console.log(
   Note : .children is better than .childNodes because .children functions
   similar to .firstElementChild and .lastElementChild and thus does not
   consider the useless whitespace, present in the HTML, as child nodes.
+  
 */
 const items = itemList.children;
 let ans = [];

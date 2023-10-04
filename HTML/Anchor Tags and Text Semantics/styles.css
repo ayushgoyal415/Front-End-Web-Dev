@@ -1,0 +1,15 @@
+*{
+  font-family: Arial;
+}
+img {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+h3 {
+  margin-top: 40px;
+}

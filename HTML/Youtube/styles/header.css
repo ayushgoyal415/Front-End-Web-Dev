@@ -1,8 +1,8 @@
 #header-root {
   z-index: 200;
+  display: flex;
   position: fixed;
   inset: 0 0 auto 0;
-  display: flex;
   height: 55px;
   background-color: white;
   border-bottom: 1px solid rgb(228 228 228);
@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-/* Icon Container */
+/* Icon Container with its Tooltip and Image */
 .icon-container {
   all: unset;
   display: flex;
@@ -35,47 +35,44 @@
 .icon-container:hover .tooltip {
   opacity: 0.95;
 }
-
 .icon-container img {
   height: 24px;
 }
 
 /* Left Section */
-.left-section {
+#left-section {
   display: flex;
   align-items: center;
 }
-.menu-icon-container {
+#left-section #menu-icon-container {
   height: 30px;
   width: 30px;
   border-radius: 15px;
   margin-left: 21px;
-  margin-right: 20px;
 }
-.menu-icon-container:hover {
+#left-section #menu-icon-container:hover {
   background-color: rgb(228 228 228);
 }
-.left-section > img {
+#left-section #yt-logo {
+  margin-left: 20px;
   height: 20px;
 }
 
 /* Right Section */
-.right-section {
+#right-section {
   display: flex;
   gap: 25px;
 }
-
-.profile-img {
-  width: 32px;
+#right-section #profile-img {
+  height: 32px;
   border-radius: 16px;
   margin-right: 20px;
-}
-.profile-img:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-
-.notification-badge {
+#right-section #profile-img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#right-section #notification-badge {
   position: absolute;
   font-size: 11px;
   background-color: rgb(200 0 0);
@@ -87,7 +84,7 @@
 
 /* Middle Section */
 
-.middle-section {
+#middle-section {
   display: flex;
   max-width: 500px;
   align-items: center;
@@ -95,8 +92,7 @@
   margin-right: 35px;
   flex: 1;
 }
-
-.middle-section input {
+#middle-section input {
   font-size: 16px;
   padding-left: 10px;
   height: 41px;
@@ -108,13 +104,12 @@
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-
-.middle-section input::placeholder {
+#middle-section input::placeholder {
   font-size: 16px;
   font-family: Arial;
 }
 
-.search-container {
+#middle-section #search-container {
   border: 1px solid rgb(190 190 190);
   height: 39px;
   width: 64px;
@@ -122,13 +117,12 @@
   margin-right: 10px;
   margin-left: -1px;
 }
-
-.voice-search-container {
+#middle-section #voice-search-container {
   background-color: rgb(245 245 245);
   height: 40px;
   width: 40px;
   border-radius: 20px;
 }
-.voice-search-container:hover{
-  background-color: rgb(228 228 228)  );
+#middle-section #voice-search-container:hover {
+  background-color: rgb(228 228 228);
 }

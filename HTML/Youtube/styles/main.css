@@ -1,3 +1,4 @@
+/* Setting the size of each video card based on window width */
 #main-root {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,44 +21,14 @@
   }
 }
 
-.video .thumbnail img {
-  width: 100%;
-}
-
-.video .channel-image img {
-  width: 36px;
-  border-radius: 18px;
-}
-
-.bottom {
-  display: flex;
-  gap: 14px;
-  margin-top: 8px;
-}
-
-.info .video-name {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.info .channel-name {
-  color: rgb(96 96 96);
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-
-.info .stats {
-  color: rgb(96 96 96);
-  font-size: 12px;
-}
-
-.thumbnail {
+/* Setting the top portion of video ie 'Thumbnail Image' and 'Time Div' */
+.video-card-top {
   position: relative;
 }
-
-.time {
+.video-card-top img {
+  width: 100%;
+}
+.video-card-top div {
   position: absolute;
   background-color: black;
   color: white;
@@ -66,4 +37,31 @@
   padding: 4px;
   font-size: 12px;
   font-weight: 500px;
+}
+
+/* Setting the bottom portion of video */
+.video-card-bottom {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+.video-card-bottom img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.video-card-bottom div > :nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-card-bottom div > :nth-child(2) {
+  color: rgb(96 96 96);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.video-card-bottom div > :nth-child(3) {
+  color: rgb(96 96 96);
+  font-size: 12px;
 }
